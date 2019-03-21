@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo application</title>
+</head>
+<body>
+	
+	<div>
+	<H1>Todo application</H1>
+	<h2>Welcome to Todo application</h2>	
+	</div>
+	<div>
+	<h3>Add your tasks below</h3>
+	</div>
+		<div>
+		<label> please click on below button to add tasks to our todo list of your works
+		</label>
+		<div>
+		<button type="" onclick="createListf()">
+			create todo list 
+		</button>
+			
+		</div>
+		</div>	
+
+		<div id="displayList" >
+
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<input type="checkbox" name="" value="">
+				<input type="text" name="" value="type your task" placeholder="">
+				<label>task done</label>
+				<button type="">edit / save</button>
+				<button type="">delete</button>
+				
+			</div>
+			<div>
+				<button type="">add one more task</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" charset="utf-8" async defer>
+
+		var listView = document.getElementById("displayList");
+
+	 	function createListf () {
+				if ( listView.style.display == "none")
+				{
+					listView.style.display = 'block';
+				}
+
+				else{
+					listView.style.display = 'none';
+					
+				}
+			}
+	</script>
+		
+</body>
+</html>
