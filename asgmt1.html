@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo application</title>
+</head>
+<body>
+	
+	<div>
+	<H1>Todo application</H1>
+	<h2>Welcome to Todo application</h2>	
+	</div>
+	<div>
+	<h3>Add your tasks below</h3>
+	</div>
+		<div>
+		<label> please click on below button to add tasks to our todo list of your works
+		</label>
+		<div>
+		<button type="" onclick="createList()">
+			create todo list 
+		</button>
+			<br>
+		</div>
+		</div>	
+		
+		<script type="text/javascript" charset="utf-8" async defer>
+	
+	 	function createList () {
+
+				
+				var cb1 = document.createElement("input");
+				cb1.type = "checkbox";
+				document.body.appendChild(cb1);
+
+				var tb1 = document.createElement("textarea" )
+				
+				//tb1.type = "textarea";
+				document.body.appendChild(tb1);
+
+				var lb1 = document.createElement("label");
+				lb1.innerHTML = "task";
+				document.body.appendChild(lb1);
+				var btn1 = document.createElement("button");
+				btn1.innerHTML = "edit / save"
+				document.body.appendChild(btn1);
+
+				var btn2 =document.createElement("button");
+				btn2.innerHTML = "delete";
+				document.body.appendChild(btn2);
+			
+			}
+			
+	</script>
+		
+</body>
+</html>
