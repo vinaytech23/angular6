@@ -16,41 +16,79 @@
 		<label> please click on below button to add tasks to our todo list of your works
 		</label>
 		<div>
-		<button type="" onclick="createList()">
+		<button  type="" onclick="createTaskobj()">
 			create todo list 
 		</button>
 			<br>
+			<h4 id="todolist">To be completed section</h4>
 		</div>
+		
 		</div>	
 		
 		<script type="text/javascript" charset="utf-8" async defer>
 	
-	 	function createList () {
+	 	//function createList () {
+	 		var btnClicked = false;
+	 		function createTaskobj (){
+                btnClicked =true;
+	 			var di = document.createElement("div");
+				//document.body.appendChild(di);
+				document.getElementById("todolist").appendChild(di);
 
-				
 				var cb1 = document.createElement("input");
 				cb1.type = "checkbox";
-				document.body.appendChild(cb1);
+				document.getElementById("todolist").appendChild(cb1);
+				//document.body.appendChild(cb1);
+				//cb1.addEventListener("click",tmp());
+			//	var tb1 = document.getElementById("place");
+			//	place.innerHTML="<input type='text' value=''>"
+				var tb2 = document.createElement("input");
+				//tb2.innerHTML = "Enter the task";
+				//document.body.appendChild(tb2);
+				document.getElementById("todolist").appendChild(tb2);
 
-				var tb1 = document.createElement("textarea" )
-				
-				//tb1.type = "textarea";
-				document.body.appendChild(tb1);
-
+								
 				var lb1 = document.createElement("label");
 				lb1.innerHTML = "task";
-				document.body.appendChild(lb1);
+				//document.body.appendChild(lb1);
+				document.getElementById("todolist").appendChild(lb1);
+
 				var btn1 = document.createElement("button");
 				btn1.innerHTML = "edit / save"
-				document.body.appendChild(btn1);
+				//document.body.appendChild(btn1);
+				document.getElementById("todolist").appendChild(btn1);
 
 				var btn2 =document.createElement("button");
 				btn2.innerHTML = "delete";
-				document.body.appendChild(btn2);
+				//document.body.appendChild(btn2);
+				document.getElementById("todolist").appendChild(btn2);
 			
-			}
-			
+if(btnClicked ==true){
+	 			
+	 			var  diobj = document.getElementById("todolist");
+	 		diobj.getElementsByTagName("input")[0].addEventListener("click",tmp) 		
+	 	
+	 		
+ }else{
+ 	
+ }
+
+	 		} 
+	 		
+
+
+ function tmp(){
+
+
+ 				var  diobj1 = document.getElementById("todolist");
+	 			document.getElementById("completedList").appendChild(diobj1);
+	 		}
+
+	 		
 	</script>
-		
+		<div>
+			<h4 id = "completedList">Completed section</h4>
+		</div>
+
 </body>
 </html>
