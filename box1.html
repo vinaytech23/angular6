@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		p {
+  padding : 1em;
+  border  : 1px solid black;
+}
+
+span {
+  border  : 1px solid green;
+  /* That makes the box visible, regardless of its type */
+  background-color: yellow;
+}
+
+.inline       { display: inline;   width: 150px; height: 50px;     }
+.block        { display: block;  width: 150px; height: 50px;       }
+.inline-block { display: inline-block; width: 150px; height: 50px; }
+	</style>
+</head>
+<body>
+<p>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+   <span class="inline">Mauris tempus turpis id ante mollis dignissim.</span>
+   Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+</p>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <span class="block">Mauris tempus turpis id ante mollis dignissim.</span>
+  Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+</p>
+
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <span class="inline-block">Mauris tempus turpis id ante mollis dignissim.</span>
+  Nam sed dolor non tortor lacinia lobortis id dapibus nunc.
+</p>	
+</body>
+</html>

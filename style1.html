@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>animation</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  color: red;
+  width: 150px;
+  font-size: 40px;
+  transform-origin: right;
+  border: 5px solid black;
+  }
+  #vin1{
+	transform-origin: right;
+}
+
+ #vin2{
+	transform-origin: left;
+}
+
+ #vin1:hover {
+  animation-name: rotate;
+  animation-duration: .9s;
+  animation-timing-function: linear;
+  animation-iteration-count: 10;
+}
+ #vin2:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+	</style>
+</head>
+<body>
+	<p id="vin1">Hello</p>
+	<p id="vin2">Enrique</p>
+
+</body>
+</html>
